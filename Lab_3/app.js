@@ -94,4 +94,96 @@ function calc() {
 	}
 }
 
-// TODO: do the bonus
+// TODO: do Lab 1 bonus
+
+function sumAndAvg() {
+	let nums = prompt('How many numbers?: ');
+	// convert num into number
+	nums = +nums;
+
+	let message = 'Invlaid number';
+	let arr = [];
+
+	// Handle if the user click cancel
+	if (nums) {
+		// Check if the user enter a valid number
+		if (!isNaN(nums)) {
+			for (let i = 0; i < nums; ) {
+				let num = prompt(`Enter number ${i + 1}`);
+				num = +num;
+				// Check if the user enter a valid number
+				if (!isNaN(num)) {
+					arr.push(num);
+					i++;
+				} else {
+					alert(message);
+				}
+			}
+		} else {
+			alert(message);
+		}
+
+		// calculate the sum & avg
+		let sum = arr.reduce((acc, curr) => {
+			acc += curr;
+			return acc;
+		});
+		let avg = sum / arr.length;
+
+		// Print the result
+		alert(`Sum = ${sum}, Avg = ${avg}`);
+	}
+}
+
+function book() {
+	let contactArr = [];
+	do {
+		var operation = prompt(
+			'Select one operation from the following (add, search) | press cancel to stop'
+		);
+
+		// Handle if the user click cancel
+		if (operation) {
+			// Delete any whitespace (before or after the value) and convert to lowercase
+			operation = operation.trim().toLowerCase();
+
+			switch (operation) {
+				case 'add': {
+					let name = prompt('Enter contact name: ');
+					let phone = prompt('Enter phone number');
+					// check if the user enter a valid value
+					if (name && phone) {
+						// create contact obj
+						let contactObj = {
+							name: name,
+							phone: phone,
+						};
+						// add the obj in the cotact array
+						contactArr.push(contactObj);
+					} else {
+						alert('Invalid name or phone');
+					}
+					break;
+				}
+				case 'search': {
+					let value = prompt('Enter value: ');
+					// check if the user enter a valid value
+					if (value) {
+						let searchValud = contactArr.find(
+							(obj) => obj.name === value || obj.phone === value
+						);
+						// check if there exist a value or no
+						if (searchValud) {
+							alert(`Name: ${searchValud.name}, Phone: ${searchValud.phone}`);
+						} else {
+							alert(`${value} doesn't exist`);
+						}
+					}
+					break;
+				}
+			}
+		}
+	} while (operation);
+	// Log the contact array
+	console.table(contactArr);
+}
