@@ -187,3 +187,5 @@ function book() {
 	// Log the contact array
 	console.table(contactArr);
 }
+
+// TODO: do Lab 2 bonus
