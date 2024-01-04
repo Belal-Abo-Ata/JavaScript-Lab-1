@@ -1,3 +1,5 @@
+// Part 1
+
 function login() {
 	let userName = prompt('Username: ');
 	let userPass = prompt('Password: ');
@@ -96,6 +98,8 @@ function calc() {
 
 // TODO: do Lab 1 bonus
 
+// Part 2
+
 function sumAndAvg() {
 	let nums = prompt('How many numbers?: ');
 	// convert num into number
@@ -189,3 +193,109 @@ function book() {
 }
 
 // TODO: do Lab 2 bonus
+
+// Part 3
+
+let obj = {
+	name: 'Ahmed',
+	age: 19,
+};
+
+// Ex 1:
+
+// Object.assign()  copies all enumerable own properties from one or more source objects to a target object
+let obj2 = {};
+Object.assign(obj2, obj);
+console.log(obj2); // Object { name: "Ahmed", age: 19 }
+
+// hasOwnProperty() => check if an object has a key
+console.log(obj.hasOwnProperty('name')); // true
+
+// Object.entries() returns an array of a given object's own key-value pairs
+console.log(Object.entries(obj));
+
+// Object.keys() returns an array of a given object's own property names
+console.log(Object.keys(obj));
+
+// Object.values returns an array of a given object's own property values.
+console.log(Object.values(obj));
+
+// Object.getPrototypeOf() returns the prototype
+console.log(Object.getPrototypeOf(obj));
+
+// Object.is()  determines whether two values are the same value.
+console.log(Object.is(obj, obj), Object.is(obj, obj2));
+
+// isPrototypeOf() checks if this object exists in another object's prototype chain.
+console.log(obj.isPrototypeOf(Object));
+
+// Object.getOwnPropertyNames() returns an array of all properties  directly in a given object.
+console.log(Object.getOwnPropertyNames(obj));
+
+//Object.fromEntries() transforms a list of key-value pairs into an object
+console.log(
+	Object.fromEntries([
+		['name', 'Belal'],
+		['age', 23],
+	])
+);
+
+// Ex 2:
+
+let arr = ['AlAhly', 'ElZamalek', 'Pyramids', 'Enpi'];
+
+// at()  takes an integer value and returns the item at that index, allowing for positive and negative integers.
+// Negative integers count back from the last item in the array.
+console.log(arr.at(-1));
+
+// contact() contact two arrays together into a new array
+console.log(arr.concat(arr));
+
+// slice(start, end) return a part of an array as an array
+console.log(arr.slice(0, 3));
+
+// splice(start, end, [...replacment]) cut a portation of an array and can replace it
+console.log(arr.splice(0, 2, 'Ismaily', 'ElIttihad'));
+console.log(arr);
+
+// join([seprator]) join an array into string
+console.log(arr.join(' '));
+
+// sort() sort an array
+console.log(arr.sort());
+
+// reverse() reverse an array
+
+console.log(arr.reverse());
+
+// pop() remove the last element in an array
+console.log(arr.pop());
+console.log(arr);
+
+// push(value) add a value at the end of an array
+console.log(arr.push('Modern Future'));
+console.log(arr);
+
+// shift() remove the first element in an array
+console.log(arr.shift());
+console.log(arr);
+
+// unshift(value) add a value at the begining of an array
+console.log(arr.unshift('AlMasry'));
+console.log(arr);
+
+/* 
+A closure in JavaScript is created when a function is defined within another function
+allowing the inner function to access variables from the outer (enclosing) function's scope. The key concept that makes closures work is the preservation of the lexical scope, 
+meaning that the inner function "remembers" the scope in which it was created.
+*/
+
+function parentFun() {
+	let val = 'ITI';
+	function childFun() {
+		console.log(val);
+	}
+	childFun();
+}
+
+parentFun();
