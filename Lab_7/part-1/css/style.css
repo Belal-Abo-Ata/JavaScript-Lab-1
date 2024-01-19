@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #34bf49;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+	width: 400px;
+	padding: 2rem;
+	background-color: white;
+	box-shadow: 1px 1px 15px 0 #555;
+	text-align: center;
+}
+
+.message {
+	font-size: 1.5rem;
+	height: 35px;
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+input {
+	padding: 0.75rem;
+	background-color: #eee;
+	outline: none;
+	border: 2px solid transparent;
+	transition: 0.3s ease border-color;
+}
+
+input:focus {
+	border-color: #0099e5;
+}
+
+input.error {
+	border-color: #ff4c4c;
+}
+
+input.valid {
+	border-color: #279b37;
+}
+
+.input-message {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	font-size: 0.75rem;
+	padding: 0.25rem;
+	height: 12px;
+	transition: 0.3s;
+	overflow: hidden;
+}
+
+.valid-message {
+	color: green;
+}
+
+.error-message {
+	color: red;
+}
+
+button {
+	padding: 1rem;
+	background-color: #279b37;
+	text-transform: uppercase;
+	color: white;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.reg {
+	color: #bbb;
+	font-size: 0.75rem;
+}
+
+.reg a {
+	text-decoration: none;
+	color: #00a98f;
+}
+
+.hidden {
+	height: 0;
+	padding: 0;
+}

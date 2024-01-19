@@ -50,10 +50,7 @@ user.buy();
 user.buy();
 user.buy();
 
-console.log(
-	'%cUsing Constructor Functions',
-	'font-size: 2rem; font-weight: bold; color: red'
-);
+console.log('%cUsing Constructor Functions', 'font-size: 2rem; font-weight: bold; color: red');
 
 console.log(user.fullName, user.sleepMood, user.money, user.healthRate);
 
@@ -109,10 +106,7 @@ user2.sleep(8);
 user2.eat(1);
 user2.buy();
 
-console.log(
-	'%cUsing Classes',
-	'font-size: 2rem; font-weight: bold; color: red'
-);
+console.log('%cUsing Classes', 'font-size: 2rem; font-weight: bold; color: red');
 
 console.log(user2.fullName, user2.sleepMood, user2.money, user2.healthRate);
 
@@ -222,9 +216,6 @@ user4.eat(3);
 user4.buy();
 user4.buy();
 
-console.log(
-	'%cUsing Factory Function',
-	'font-size: 2rem; font-weight: bold; color: red'
-);
+console.log('%cUsing Factory Function', 'font-size: 2rem; font-weight: bold; color: red');
 
 console.log(user4.fullName, user4.sleepMood, user4.money, user4.healthRate);

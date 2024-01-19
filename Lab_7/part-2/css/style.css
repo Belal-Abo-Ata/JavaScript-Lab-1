@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+	background-color: #ccc;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+		Verdana, sans-serif;
+}
+
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.todo-container {
+	background-color: white;
+	border-radius: 0.25rem;
+	min-width: 500px;
+	min-height: 10px;
+}
+
+.todo-task {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	transition: 0.3s;
+}
+
+.btn-container {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.btn-container button {
+	font-size: 1.5rem;
+	background: none;
+}
+
+.todo-task:not(:last-child) {
+	border-bottom: 1px solid #888;
+}
+
+.done-btn {
+	color: green;
+}
+
+.delete-btn {
+	color: red;
+}
+
+.done {
+	background-color: #a1ffa1;
+}
+
+form {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+form input {
+	padding: 0.25rem;
+}
+
+form button {
+	background-color: #1273bb;
+	padding: 0.35rem 0.5rem;
+	color: white;
+	border-radius: 0.25rem;
+	font-size: 1rem;
+}
+
+.hidden {
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	border: none !important;
+}
