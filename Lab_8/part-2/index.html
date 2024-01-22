@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Part 2</title>
+		<!-- Font Awesome  -->
+		<link rel="stylesheet" href="./css/all.min.css" />
+		<!--  Main Style  -->
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+
+	<body>
+		<div id="clock" class="light">
+			<div class="display">
+				<div class="weekdays"></div>
+				<div class="ampm"></div>
+				<div class="alarm"></div>
+				<div class="digits"></div>
+			</div>
+		</div>
+		<div class="set-alarm">
+			<div class="info">
+				<h1>set alarm after</h1>
+				<p class="guide">Set The Alarm in 24 Format (1pm => 13) & (5am => 05)</p>
+				<p class="guide">Every field must be at least 2 digits (5 => 05)</p>
+			</div>
+			<div class="time-blocks">
+				<div class="time-block">
+					<p>Hours</p>
+					<input type="text" placeholder="0" class="hour-input" />
+				</div>
+				<div class="time-block">
+					<p>Minutes</p>
+					<input type="text" placeholder="0" class="minute-input" />
+				</div>
+				<div class="time-block">
+					<p>Seconds</p>
+					<input type="text" placeholder="0" class="second-input" />
+				</div>
+			</div>
+			<div class="btns">
+				<button type="button" class="set-btn">set</button>
+				<button type="button" class="clear-btn">clear</button>
+			</div>
+			<div class="message hidden">Please Enter a Valid Time (HH:MM:SS);</div>
+		</div>
+		<!-- Font Awesome Script -->
+		<script src="js/all.min.js"></script>
+		<!-- Main Script -->
+		<script type="module" src="./js/main.js"></script>
+
+		<!-- JavaScript Includes For jQuary -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+		<script src="js/jQuary.js"></script>
+	</body>
+</html>
