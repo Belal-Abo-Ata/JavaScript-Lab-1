@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lab 9</title>
+		<!-- Font Awesome  -->
+		<link rel="stylesheet" href="./css/all.min.css" />
+		<!--  Main Style  -->
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+
+	<body>
+		<form>
+			<input type="text" placeholder="username" class="username" />
+			<div class="message user-message">
+				<i class="fa-solid fa-minus"></i>
+				<p>starts with letter</p>
+			</div>
+			<input type="password" placeholder="password" class="userpass" />
+			<div class="message small">
+				<i class="fa-solid fa-minus"></i>
+				<p>Include small letter</p>
+			</div>
+			<div class="message capital">
+				<i class="fa-solid fa-minus"></i>
+				<p>Include Capital letter</p>
+			</div>
+			<div class="message digits">
+				<i class="fa-solid fa-minus"></i>
+				<p>Include Digits</p>
+			</div>
+			<div class="message eight">
+				<i class="fa-solid fa-minus"></i>
+				<p>at least 8 digits</p>
+			</div>
+			<button type="submit" class="submit-btn">login</button>
+			<div class="reg">
+				Not registered? <span><a href="#">Create an account</a></span>
+			</div>
+		</form>
+		<!-- Font Awesome Script -->
+		<script src="js/all.min.js"></script>
+		<!-- Main Script -->
+		<script type="module" src="./js/main.js"></script>
+	</body>
+</html>
