@@ -21,6 +21,7 @@ This is a repo for Solutions of Client Side Technologies Labs
 [![Lab7](https://img.shields.io/badge/Lab%207-red)](https://github.com/Belal-Abo-Ata/JavaScript-Labs/tree/main/Lab_7)
 [![Lab8](https://img.shields.io/badge/Lab%208-green)](https://github.com/Belal-Abo-Ata/JavaScript-Labs/tree/main/Lab_8)
 [![Lab9](https://img.shields.io/badge/Lab%209-yellow)](https://github.com/Belal-Abo-Ata/JavaScript-Labs/tree/main/Lab_9)
+[![Lab10](https://img.shields.io/badge/Lab%2010-yellow)](https://github.com/Belal-Abo-Ata/JavaScript-Labs/tree/main/Lab_10)
 
 > [!TIP]
 > Every lab has been solved into one **HTML** page in a separated folder.
